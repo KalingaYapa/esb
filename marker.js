@@ -15,6 +15,9 @@ map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
 google.maps.event.addListener(map, "rightclick", function(event) {
   if (no < 1) {
     addMarker(event.latLng,map);
+    document.getElementById('lat').value = event.latLng.lat();
+      //alert('drag');
+      document.getElementById('lon').value = event.latLng.lng();
   }
   no=no+1;
 });

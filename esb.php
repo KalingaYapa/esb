@@ -14,9 +14,9 @@
 
     </head>
 
-    <body onload="initialize()" class="col-lg-12  " background="we.jpg">
-        <div style="font">
-            <h1> Find Weather Report </h1>
+    <body onload="initialize()" class="col-lg-12  " background="we3.jpg">
+        <div class="col-md-offset-4">
+            <h1 style="color:whitesmoke;"> Find Weather Report </h1>
         </div>
 
         <div class="container">
@@ -32,7 +32,7 @@
                         <form action="result.php" method="post">
 
                             <div class="form-group">
-                                <label>Latitude:</label><br>
+                                <label style="color: white;">Latitude:</label><br>
                                 <div style="
                                      padding-left: 75px;
                                      padding-right: 117px;">
@@ -41,7 +41,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>longtitude:</label><br>
+                                <label style="color: white;">longtitude:</label><br>
                                 <div class="" style="
                                      padding-left: 75px;
                                      padding-right: 117px;">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class = "col-md-7">
-                    <label style="font-size:10px; color: #e92a2a;">Right Click on the map & drag to the place you want & get lat and long</label>
+                    <label style="font-size:10px; color: white;">Right Click on the map & drag to the place you want & get lat and long</label>
                     <div style="height: 500px;">
                         <!-- map -->
                         <div  >
