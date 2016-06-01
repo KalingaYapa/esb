@@ -15,7 +15,7 @@
     </head>
 
     <body onload="initialize()" class="col-lg-12  " background="we.jpg">
-        <div>
+        <div style="font">
             <h1> Find Weather Report </h1>
         </div>
 
