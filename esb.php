@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3UiQD6nvmkCL4kVjCYnD74QHXzKPSa_Q&callback=initMap"></script>
+    <head>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3UiQD6nvmkCL4kVjCYnD74QHXzKPSa_Q&callback=initMap"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-</head>
+    </head>
 
-<body onload="initialize()">
-<form action="result.php" method="post">
-  Latitude:<br>
-  <input type="text" name="lat" id="lat">
-  <br>
-  langtitude:<br>
-  <input type="text" name="lon" id="lon">
+    <body onload="initialize()" class="col-lg-12  ">
+        <h1> Find Weather Report</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="panel panel-default" style="
+                         padding-bottom: 8px;
+                         padding-left: 5px;
+                         border-right-width: 2px;
+                         ">
+                        <form action="result.php" method="post">
 
-<button type="submit" name ="submit">Submit</button>
-
-</form>
-
-
-<div style="height: 530px">
-                    <!-- map -->
-                    <div  >
-                        <div  class="form-group col-lg-4 col-md-4 col-sm-4" style="padding:0;">
-                            <div class="container-fluid" style="padding:0;">
-                                <div id="map-canvas" style="width:420px;height:530px;"></div>
-
+                            <div class="form-group">
+                                Latitude:<br>
+                                <div style="
+                                     padding-left: 75px;
+                                     padding-right: 117px;">
+                                    <input type="text" class = "form-control" name="lat" id="lat">
+                                </div>
                             </div>
-                            <label style="font-size:10px; color: #146BA7;">Right Click on the map & drag to the place you want & get lat and long</label>
+
+                            <div class="form-group">
+                                longtitude:<br>
+                                <div class="" style="
+                                     padding-left: 75px;
+                                     padding-right: 117px;">
+                                    <input type="text" class="form-control" name="lon" id="lon">
+                                </div>
+                            </div>
+
+                            <button type="submit" name="submit" class="btn btn-default">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class = "col-md-7">
+
+                    <div style="height: 400px;">
+                        <!-- map -->
+                        <div  >
+                            <div  class="form-group col-lg-4 col-md-4 col-sm-4" style="padding:0;">
+                                <div class="container-fluid" style="padding:0;">
+                                    <div id="map-canvas" style="width:420px;height:530px;"></div>
+
+                                </div>
+                                <label style="font-size:10px; color: #e92a2a;">Right Click on the map & drag to the place you want & get lat and long</label>
+                            </div>
                         </div>
                     </div>
-</div>
+                </div>
 
-            <script src="googlemap.js"></script>
-            <script src="marker.js"></script>
-</body>
+            </div>
+        </div>
+
+        <script src="googlemap.js"></script>
+        <script src="marker.js"></script>
+    </body>
 </html>
