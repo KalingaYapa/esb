@@ -7,7 +7,10 @@
     </head>
 
     <body onload="initialize()" class="col-lg-12  ">
-        <h1> Find Weather Report</h1>
+        <div>
+            <h1> Find Weather Report</h1>
+        </div>
+        
         <div class="container">
             <div class="row">
                 <div class="col-md-5">

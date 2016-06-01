@@ -1,9 +1,9 @@
 <?php
-    echo "kalinga";
+    //echo "kalinga";
   if (isset($_POST['submit'])) {
     $lat = $_POST['lat'];
     $lon = $_POST['lon'];
-    echo $lat;
+   // echo $lat;
 
     $url = "http://kkyapa-Inspiron-3521:8281/services/SampleProxy2?lat=".$lat."&lon=".$lon."";
     $ch = curl_init();
