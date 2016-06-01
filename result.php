@@ -44,9 +44,9 @@ if (isset($_POST['submit'])) {
                      height: 350px;
                      ">
 
-                    <div class="col-md-offset-1">
+                    <div class="col-md-offset-2">
 
-                        <h1 style="color: whitesmoke">Weather Result</h1>
+                        <h1 style="color: whitesmoke">Weather Report</h1>
                     </div>
                     <div class="col-md-offset-2">
                         <label for="city" style="color: white;font-size: 20px;"> City : </label>
