@@ -3,18 +3,26 @@
     <head>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3UiQD6nvmkCL4kVjCYnD74QHXzKPSa_Q&callback=initMap"></script>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
+        
+        <style>
+            .panel-transparent{
+                
+                background: none;
+            }
+            
+        </style>
+        
     </head>
 
-    <body onload="initialize()" class="col-lg-12  ">
+    <body onload="initialize()" class="col-lg-12  " background="we.jpg">
         <div>
-            <h1> Find Weather Report</h1>
+            <h1> Find Weather Report </h1>
         </div>
         
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <div class="panel panel-default" style="
+                    <div class="panel panel-default panel-transparent" style="
                          padding-bottom: 8px;
                          padding-left: 5px;
                          border-right-width: 2px;
@@ -45,8 +53,8 @@
                     </div>
                 </div>
                 <div class = "col-md-7">
-
-                    <div style="height: 400px;">
+                    <label style="font-size:10px; color: #e92a2a;">Right Click on the map & drag to the place you want & get lat and long</label>
+                    <div style="height: 500px;">
                         <!-- map -->
                         <div  >
                             <div  class="form-group col-lg-4 col-md-4 col-sm-4" style="padding:0;">
@@ -54,7 +62,7 @@
                                     <div id="map-canvas" style="width:420px;height:530px;"></div>
 
                                 </div>
-                                <label style="font-size:10px; color: #e92a2a;">Right Click on the map & drag to the place you want & get lat and long</label>
+                                
                             </div>
                         </div>
                     </div>
