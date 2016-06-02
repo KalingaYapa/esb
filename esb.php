@@ -9,14 +9,17 @@
 
                 background: none;
             }
+            
+            
+           
 
         </style>
 
     </head>
 
-    <body onload="initialize()" class="col-lg-12  " background="we3.jpg">
+    <body onload="initialize()" class="col-lg-12" background="we3.jpg">
         <div class="col-md-offset-4">
-            <h1 style="color:whitesmoke;"> Find Weather Report </h1>
+            <h1 style="color:whitesmoke;"> Geo-Weather Report </h1>
         </div>
 
         <div class="container">
@@ -24,7 +27,7 @@
                 <div class="col-md-5" style="
                      margin-top: 18px;
                      ">
-                    <div class="panel panel-default panel-transparent" style="
+                    <div class="panel  panel-transparent" style="
                          padding-bottom: 8px;
                          padding-left: 5px;
                          border-right-width: 2px;
@@ -32,24 +35,24 @@
                         <form action="result.php" method="post">
 
                             <div class="form-group">
-                                <label style="color: white;">Latitude:</label><br>
+                                <br>
                                 <div style="
                                      padding-left: 75px;
                                      padding-right: 117px;">
-                                    <input type="text" class = "form-control" name="lat" id="lat">
+                                    <input type="text" style="color:white;" class = "form-control panel-transparent" name="lat" id="lat" placeholder="Latitude">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label style="color: white;">longtitude:</label><br>
+                                
                                 <div class="" style="
                                      padding-left: 75px;
                                      padding-right: 117px;">
-                                    <input type="text" class="form-control" name="lon" id="lon">
+                                    <input type="text" style="color:white;" class="form-control panel-transparent" name="lon" id="lon" placeholder="Longtitude">
                                 </div>
                             </div>
 
-                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" name="submit" style="width:256px; margin-left: 75px;" class="btn btn-primary panel-transparent">Submit</button>
 
                         </form>
                     </div>
