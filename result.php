@@ -6,7 +6,10 @@ if (isset($_POST['submit'])) {
     //echo $lat;
 
     $url = "http://kkyapa-Inspiron-3521:8281/services/geoweather?lat=" . $lat . "&lon=" . $lon . "";
+
+    //initialize curl
     $ch = curl_init();
+
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_HTTPGET, true);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
@@ -45,7 +48,7 @@ if (isset($_POST['submit'])) {
         <div class="col-md-6 col-md-offset-2" >
             <div class="panel panel-default panel-transparent" style="
                  margin-top: 77px;
-                 
+
                  ">
                 <div class="panel-body" style="
                      width: 470px;
